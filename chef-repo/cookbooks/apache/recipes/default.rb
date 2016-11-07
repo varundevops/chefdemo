@@ -44,7 +44,8 @@ node["apache"]["sites"].each do |sitename, data|
 		mode "0644"
 		variables(
 			:site_title => data["site_title"],
-			:newvariable => "COMING SOON!!!"
+			:newvariable => "COMING SOON!!!",
+			: author_name => node["author"]["name"]
 	)
 	end
 end
